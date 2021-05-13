@@ -1,0 +1,53 @@
+    .list {
+        display: grid;
+        grid-template-columns: 35px 1fr 35px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    .list__container {
+        padding: 10px;
+        margin: 2px 0;
+        background-color: #fff;
+        max-width: auto;
+    }
+    
+    .list__content {
+        justify-content: center;
+        overflow-wrap: anywhere;
+        margin: 10px;
+    }
+    
+    .list__content--done {
+        text-decoration: line-through;
+    }
+    
+    .list__button {
+        margin: 10px 0;
+        padding: 5px;
+        font-size: 25px;
+        height: 38px;
+        border: none;
+        color: white;
+    }
+    
+    .list__button--done {
+        background-color: green;
+        grid-column: 1;
+    }
+    
+    .list__button--done:hover {
+        background-color: rgb(9, 145, 9);
+    }
+    
+    .list__button--remove {
+        background-color: red;
+        grid-column: 3;
+    }
+    
+    .list__button--remove:hover {
+        background-color: rgb(172, 46, 46);
+    }

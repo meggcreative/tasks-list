@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.min.css" integrity="sha512-0i+Cj480FEdmxsDzL2o0Uj5UEA3Z27RTCP1DZrgJpuIZe6oRbfDA35LCTFyZIRz6WFmRtEleAcDwAip0MhcEsA==" crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>The things to do </title>
+</head>
+
+<body>
+
+    <main>
+        <header class="header">
+            <h1> Lista zadań </h1>
+        </header>
+
+        <form class="form">
+
+            <h2 class="form__header">Dodaj nowe zadanie</h2>
+            <div class="form__container">
+
+                <input class="js-newTask form__input">
+                <button class="js-addNewTask form__button" id="myTestButton">Dodaj zadanie </button>
+
+            </div>
+
+            <h2 class="form__header"> Lista zadań </h2>
+
+            <ul class=" list__container js-tasks">
+            </ul>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

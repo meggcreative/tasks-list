@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #eee;
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.header {
+    margin: 0 20px;
+}
