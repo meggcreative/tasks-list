@@ -1,33 +1,39 @@
 {
-    let tasks = [{
-            content: "zrób zakupy",
-            done: true,
-        },
-        {
-            content: " umyj auto",
-            done: false,
-        },
-    ];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
 
         render();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
+
+        ];
 
         render();
     };
 
     const toogleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
-
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            {
+                ...tasks[taskIndex],
+                done: !tasks[taskIndex].done
+            },
+            ...tasks.slice(taskIndex + 1),
+        ];
         render();
+
     };
+
+
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -99,7 +105,10 @@
     const init = () => {
         render();
         const form = document.querySelector(".form");
+        const inputContent = document.querySelector(".js-newTask");
+
         form.addEventListener("submit", onFormSubmit);
+        setFocus(inputContent);
 
     };
 
