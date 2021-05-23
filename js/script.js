@@ -90,12 +90,12 @@
 
         if (tasks.length > 0) {
             buttonsHTMLContent += `
-            <button class =" js-hideDoneButton" 
+            <button class ="js-hideDoneButton" 
             ${tasks.every(({done}) => !done) ? "disabled" : ""} 
             >
             ${hideDoneTasks ? "Pokaz" : "Ukryj"} ukończone 
             </button>
-            <button class ="completeAllButton"
+            <button class="js-completeAllButton"
             ${tasks.every(({done}) => done) ? "disabled" : ""}
             >
             Ukończ wszystkie
@@ -121,7 +121,7 @@
 
 
     const bindCompleteAllTasksEvent = () => {
-        const completeAllButton = document.querySelector("js-completeAllButton");
+        const completeAllButton = document.querySelector(".js-completeAllButton");
 
         if (!completeAllButton) {
             return;
