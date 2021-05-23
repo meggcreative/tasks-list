@@ -8,6 +8,10 @@
         padding: 10px 10px 10px 10px;
     }
     
+    .list__item--hidden {
+        display: none;
+    }
+    
     .list__container {
         padding: 10px;
         margin: 2px 0;
