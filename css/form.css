@@ -41,6 +41,7 @@
 }
 
 .form__button {
+    transition: 1s;
     flex-basis: 200px;
     background-color: teal;
     border: 1px solid teal;
@@ -52,6 +53,7 @@
 }
 
 .form__button:hover {
+    transform: scale (1.5);
     background-color: rgb(45, 150, 150);
 }
 

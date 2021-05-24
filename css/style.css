@@ -18,3 +18,20 @@ body {
 .header {
     margin: 0 20px;
 }
+
+.body__button {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: none;
+    background-color: #fff;
+    color: teal;
+    padding: 10px;
+}
+
+.body__button--hide {
+    grid-row: 1;
+}
+
+.body__button--complete {
+    grid-row: 2;
+}
