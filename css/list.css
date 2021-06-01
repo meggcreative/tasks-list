@@ -42,22 +42,27 @@
         height: 38px;
         border: none;
         color: white;
+        transition: background 0.3s;
     }
     
     .list__button--done {
+        transition: 1s;
         background-color: green;
         grid-column: 1;
     }
     
     .list__button--done:hover {
         background-color: rgb(9, 145, 9);
+        transform: scale (1.5);
     }
     
     .list__button--remove {
+        transition: 1s;
         background-color: red;
         grid-column: 3;
     }
     
     .list__button--remove:hover {
         background-color: rgb(172, 46, 46);
+        transform: scale (1.5);
     }
