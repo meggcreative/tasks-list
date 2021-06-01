@@ -10,7 +10,7 @@
 
 [ Click here to make Your own tasks list](https://meggcreative.github.io/tasks-list/)
 
-![Tasks list page](images/task-list.jpg)
+![Tasks list page](https://recordit.co/fvV08Lyg75)
 ## Basic Informations
 
 This project was created to make a simple example of using forms in JS and practice how we can use functions in JS. Moreover this project shows how exactly we can use media queries to change view for smaller receiveres like for example iphone.   
