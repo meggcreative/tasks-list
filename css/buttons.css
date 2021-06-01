@@ -1,0 +1,24 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons__button {
+    border: none;
+    background-color: #fff;
+    color: teal;
+    padding: 10px;
+    transition: color 0.5s;
+    margin: 0 0 0 20px;
+}
+
+@media(max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.buttons__button:disabled {
+    color: grey;
+}
