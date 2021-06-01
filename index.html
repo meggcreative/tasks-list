@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.min.css" integrity="sha512-0i+Cj480FEdmxsDzL2o0Uj5UEA3Z27RTCP1DZrgJpuIZe6oRbfDA35LCTFyZIRz6WFmRtEleAcDwAip0MhcEsA==" crossorigin="anonymous"
     />
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/conatiner.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
     <link href="css/list.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
@@ -19,30 +22,29 @@
 
 <body>
 
-    <main>
-        <header class="header">
+    <main class="container">
+        <header>
             <h1> Lista zadań </h1>
         </header>
 
-        <form class="form">
-
-            <h2 class="form__header">Dodaj nowe zadanie</h2>
-            <div class="form__container">
-
-                <input class="js-newTask form__input" placeholder="Co jest do zrobienia?">
-                <button class="js-addNewTask form__button" id="myTestButton">Dodaj zadanie </button>
-
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <div class="section__body">
+                <form class="form">
+                    <input class="js-newTask form__input" placeholder="Co jest do zrobienia?">
+                    <button class="js-addNewTask form__button" id="myTestButton">Dodaj zadanie </button>
+                </form>
             </div>
-
-            <h2 class="form__header"> Lista zadań
-                <div class="js-doneButtons"></div>
-            </h2>
-
-            <ul class=" list__container js-tasks">
-            </ul>
-
-        </form>
-
+        </section>
+        <section class="section">
+            <header class="section__header">
+                <h2 class="section__title"> Lista zadań </h2>
+                <div class="js-doneButtons buttons"></div>
+            </header>
+            <div class="section__body">
+                <ul class=" list__container js-tasks"></ul>
+            </div>
+        </section>
     </main>
 
 </body>
